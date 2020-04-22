@@ -1,0 +1,28 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "esmodules": true
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "dynamic-import-node",
+      {
+        "noInterop": true
+      }
+    ],
+    [
+      "module-resolver",
+      {
+        "root": ["./"]
+      }
+    ]
+  ],
+  "sourceMaps": true,
+  "retainLines": true
+}
